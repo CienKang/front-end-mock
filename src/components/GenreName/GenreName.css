@@ -1,0 +1,28 @@
+.genre-logo-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.genre-logo-header>img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.genre-logo-header>p {
+    padding-bottom: 2.5px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    padding-top: 5px;
+    background-color: #4c63aa;
+    color: white;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 30px;
+    font-weight: bolder;
+    transform: translate(-25%, -25%);
+    z-index: 2;
+}

@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "830539b2-31b0-4f03-a3a5-b188565bf7e8",
+		"name": "Record shelf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All records",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authorization}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/records",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"records"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all records",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/records",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"records"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 04:10:26 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"0e2ddccf-f494-4c41-a499-90f8267f491a\",\n            \"name\": \"Beautiful Mistakes (feat. Megan Thee Stallion)\",\n            \"genre\": {\n                \"id\": \"128aa7f8-c943-48ce-b352-7edd26fa4c6e\",\n                \"name\": \"Pop\"\n            },\n            \"artist\": {\n                \"id\": \"496b0a85-2bfa-45bc-8d0f-57fe0ce55708\",\n                \"name\": \"Maroon 5\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b27386a8ab515de4b7aef28cd631\",\n            \"publishedAt\": \"2021-06-11T00:00:00\"\n        },\n        {\n            \"id\": \"45e1d753-2986-43cb-9b9d-30c370056319\",\n            \"name\": \"This Love\",\n            \"genre\": {\n                \"id\": \"128aa7f8-c943-48ce-b352-7edd26fa4c6e\",\n                \"name\": \"Pop\"\n            },\n            \"artist\": {\n                \"id\": \"496b0a85-2bfa-45bc-8d0f-57fe0ce55708\",\n                \"name\": \"Maroon 5\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b27317b3850d758fff5a2301e537\",\n            \"publishedAt\": \"2002-06-25T00:00:00\"\n        },\n        {\n            \"id\": \"8266dac3-b2b1-4551-b2ec-91e260244a51\",\n            \"name\": \"Payphone\",\n            \"genre\": {\n                \"id\": \"128aa7f8-c943-48ce-b352-7edd26fa4c6e\",\n                \"name\": \"Pop\"\n            },\n            \"artist\": {\n                \"id\": \"496b0a85-2bfa-45bc-8d0f-57fe0ce55708\",\n                \"name\": \"Maroon 5\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b2733119f490f02fcee6514e8604\",\n            \"publishedAt\": \"2012-01-01T00:00:00\"\n        },\n        {\n            \"id\": \"94af94a3-9d47-4dd8-9b45-1c51a9443e96\",\n            \"name\": \"Maps\",\n            \"genre\": {\n                \"id\": \"128aa7f8-c943-48ce-b352-7edd26fa4c6e\",\n                \"name\": \"Pop\"\n            },\n            \"artist\": {\n                \"id\": \"496b0a85-2bfa-45bc-8d0f-57fe0ce55708\",\n                \"name\": \"Maroon 5\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273442b53773d50e1b5369bb16c\",\n            \"publishedAt\": \"2014-09-02T00:00:00\"\n        },\n        {\n            \"id\": \"cd3cc1e3-e1e0-4ccd-bc67-747648985838\",\n            \"name\": \"Lost\",\n            \"genre\": {\n                \"id\": \"128aa7f8-c943-48ce-b352-7edd26fa4c6e\",\n                \"name\": \"Pop\"\n            },\n            \"artist\": {\n                \"id\": \"496b0a85-2bfa-45bc-8d0f-57fe0ce55708\",\n                \"name\": \"Maroon 5\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b27386a8ab515de4b7aef28cd631\",\n            \"publishedAt\": \"2021-06-11T00:00:00\"\n        },\n        {\n            \"id\": \"0530d74c-5dbc-4f1b-b3e2-7ada4520fb4c\",\n            \"name\": \"Magnetic\",\n            \"genre\": {\n                \"id\": \"305202d2-b598-4c1b-a2bb-ca08bb65bad3\",\n                \"name\": \"Country\"\n            },\n            \"artist\": {\n                \"id\": \"8150acae-62fd-491e-bac4-06d074b3c7b4\",\n                \"name\": \"Phillip Phillips\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b27322d30dee7738733b99774f9b\",\n            \"publishedAt\": \"2018-01-19T00:00:00\"\n        },\n        {\n            \"id\": \"9b4227b2-0cb5-40ed-81cb-09b0577ac1dd\",\n            \"name\": \"Home\",\n            \"genre\": {\n                \"id\": \"305202d2-b598-4c1b-a2bb-ca08bb65bad3\",\n                \"name\": \"Country\"\n            },\n            \"artist\": {\n                \"id\": \"8150acae-62fd-491e-bac4-06d074b3c7b4\",\n                \"name\": \"Phillip Phillips\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273d9009cc16eddbc6664508cd8\",\n            \"publishedAt\": \"2013-01-01T00:00:00\"\n        },\n        {\n            \"id\": \"d495f3e6-f03d-44ce-a4d6-a02309bb8c88\",\n            \"name\": \"Gone, Gone, Gone\",\n            \"genre\": {\n                \"id\": \"305202d2-b598-4c1b-a2bb-ca08bb65bad3\",\n                \"name\": \"Country\"\n            },\n            \"artist\": {\n                \"id\": \"8150acae-62fd-491e-bac4-06d074b3c7b4\",\n                \"name\": \"Phillip Phillips\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273d9009cc16eddbc6664508cd8\",\n            \"publishedAt\": \"2013-01-01T00:00:00\"\n        },\n        {\n            \"id\": \"f12c86c0-df24-47cd-af02-ff0f6700d45a\",\n            \"name\": \"So Easy\",\n            \"genre\": {\n                \"id\": \"305202d2-b598-4c1b-a2bb-ca08bb65bad3\",\n                \"name\": \"Country\"\n            },\n            \"artist\": {\n                \"id\": \"8150acae-62fd-491e-bac4-06d074b3c7b4\",\n                \"name\": \"Phillip Phillips\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273bb7dac0075160938dd6c8799\",\n            \"publishedAt\": \"2013-01-01T00:00:00\"\n        },\n        {\n            \"id\": \"f5ba1936-bebb-4375-8007-79e3b3d45d7b\",\n            \"name\": \"Raging Fire\",\n            \"genre\": {\n                \"id\": \"305202d2-b598-4c1b-a2bb-ca08bb65bad3\",\n                \"name\": \"Country\"\n            },\n            \"artist\": {\n                \"id\": \"8150acae-62fd-491e-bac4-06d074b3c7b4\",\n                \"name\": \"Phillip Phillips\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b27304a86148a05884187f6e3151\",\n            \"publishedAt\": \"2014-01-01T00:00:00\"\n        },\n        {\n            \"id\": \"0d07b550-4c0a-4b78-b0e8-9d68afa57556\",\n            \"name\": \"Kheench Te Nach (From \\\"Chandigarh Kare Aashiqui\\\")\",\n            \"genre\": {\n                \"id\": \"5ddb1397-fcb8-4d5e-88ba-7a0ea6a84e91\",\n                \"name\": \"Bollywood\"\n            },\n            \"artist\": {\n                \"id\": \"8cbcf3cd-672a-461f-8829-491ca1bc6330\",\n                \"name\": \"Sachin-Jigar\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b2731f3174387d35b946c4c25e19\",\n            \"publishedAt\": \"2021-11-26T00:00:00\"\n        },\n        {\n            \"id\": \"6ae8a36a-20b8-419c-a34d-957dd259894b\",\n            \"name\": \"Bansuri (From \\\"Hum Do Hamare Do\\\")\",\n            \"genre\": {\n                \"id\": \"5ddb1397-fcb8-4d5e-88ba-7a0ea6a84e91\",\n                \"name\": \"Bollywood\"\n            },\n            \"artist\": {\n                \"id\": \"8cbcf3cd-672a-461f-8829-491ca1bc6330\",\n                \"name\": \"Sachin-Jigar\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273017e042d145c5a7c9428d32e\",\n            \"publishedAt\": \"2021-10-15T00:00:00\"\n        },\n        {\n            \"id\": \"7549c637-d2b2-4f1e-a411-9eba8f881c5e\",\n            \"name\": \"Najaa (From \\\"Sooryavanshi\\\")\",\n            \"genre\": {\n                \"id\": \"5ddb1397-fcb8-4d5e-88ba-7a0ea6a84e91\",\n                \"name\": \"Bollywood\"\n            },\n            \"artist\": {\n                \"id\": \"d88b45bd-a644-445d-bdb5-eaf8ac2e07ee\",\n                \"name\": \"Tanishk Bagchi\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273779e80010d48e9848669512c\",\n            \"publishedAt\": \"2021-11-03T00:00:00\"\n        },\n        {\n            \"id\": \"c5a9e3c5-16a2-42dc-9a1a-4d6538f7f273\",\n            \"name\": \"Chandigarh Kare Aashiqui Title Track (From \\\"Chandigarh Kare Aashiqui\\\")\",\n            \"genre\": {\n                \"id\": \"5ddb1397-fcb8-4d5e-88ba-7a0ea6a84e91\",\n                \"name\": \"Bollywood\"\n            },\n            \"artist\": {\n                \"id\": \"8cbcf3cd-672a-461f-8829-491ca1bc6330\",\n                \"name\": \"Sachin-Jigar\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b27397f046560a115e4b05c8daaa\",\n            \"publishedAt\": \"2021-11-13T00:00:00\"\n        },\n        {\n            \"id\": \"d5243f60-544b-4544-aa08-6759dc7ae340\",\n            \"name\": \"Bad Boy X Bad Girl (feat. Nikhita Gandhi)\",\n            \"genre\": {\n                \"id\": \"5ddb1397-fcb8-4d5e-88ba-7a0ea6a84e91\",\n                \"name\": \"Bollywood\"\n            },\n            \"artist\": {\n                \"id\": \"8b14a0aa-f0b6-4dfd-a22f-0944f85d7a6e\",\n                \"name\": \"Badshah\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273cec99b43df372b68b6648f81\",\n            \"publishedAt\": \"2021-09-17T00:00:00\"\n        },\n        {\n            \"id\": \"17e72576-1451-41dd-8859-b4f380347354\",\n            \"name\": \"Takin' Shots\",\n            \"genre\": {\n                \"id\": \"95aec636-f7b5-46e7-8343-8203b1a03a90\",\n                \"name\": \"Rock\"\n            },\n            \"artist\": {\n                \"id\": \"056e9a8b-e2a4-4585-aa7b-a45a994b31b5\",\n                \"name\": \"Post Malone\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268\",\n            \"publishedAt\": \"2018-04-27T00:00:00\"\n        },\n        {\n            \"id\": \"1d621785-aad9-4c7d-91ed-60ceccb01ca6\",\n            \"name\": \"Over Now\",\n            \"genre\": {\n                \"id\": \"95aec636-f7b5-46e7-8343-8203b1a03a90\",\n                \"name\": \"Rock\"\n            },\n            \"artist\": {\n                \"id\": \"056e9a8b-e2a4-4585-aa7b-a45a994b31b5\",\n                \"name\": \"Post Malone\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268\",\n            \"publishedAt\": \"2018-04-27T00:00:00\"\n        },\n        {\n            \"id\": \"25df58b1-d13f-4643-a0b2-4e42b6921166\",\n            \"name\": \"On The Road (feat. Meek Mill & Lil Baby)\",\n            \"genre\": {\n                \"id\": \"95aec636-f7b5-46e7-8343-8203b1a03a90\",\n                \"name\": \"Rock\"\n            },\n            \"artist\": {\n                \"id\": \"056e9a8b-e2a4-4585-aa7b-a45a994b31b5\",\n                \"name\": \"Post Malone\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02\",\n            \"publishedAt\": \"2019-09-06T00:00:00\"\n        },\n        {\n            \"id\": \"3de5e2b0-c0a4-4f72-9147-559f2e3844c5\",\n            \"name\": \"Sugar Wraith\",\n            \"genre\": {\n                \"id\": \"95aec636-f7b5-46e7-8343-8203b1a03a90\",\n                \"name\": \"Rock\"\n            },\n            \"artist\": {\n                \"id\": \"056e9a8b-e2a4-4585-aa7b-a45a994b31b5\",\n                \"name\": \"Post Malone\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268\",\n            \"publishedAt\": \"2018-04-27T00:00:00\"\n        },\n        {\n            \"id\": \"4949a705-b544-4985-8b45-7fb102c38aa6\",\n            \"name\": \"Paranoid\",\n            \"genre\": {\n                \"id\": \"95aec636-f7b5-46e7-8343-8203b1a03a90\",\n                \"name\": \"Rock\"\n            },\n            \"artist\": {\n                \"id\": \"056e9a8b-e2a4-4585-aa7b-a45a994b31b5\",\n                \"name\": \"Post Malone\"\n            },\n            \"imageUrl\": \"https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268\",\n            \"publishedAt\": \"2018-04-27T00:00:00\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Likes by record id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authorization}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/records/0e2ddccf-f494-4c41-a499-90f8267f491a/likes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"records",
+						"0e2ddccf-f494-4c41-a499-90f8267f491a",
+						"likes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get likes by record id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/records/0e2ddccf-f494-4c41-a499-90f8267f491a/likes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"records",
+								"0e2ddccf-f494-4c41-a499-90f8267f491a",
+								"likes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 04:11:19 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"like\": false,\n        \"count\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Likes by record id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authorization}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"like\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/records/0e2ddccf-f494-4c41-a499-90f8267f491a/likes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"records",
+						"0e2ddccf-f494-4c41-a499-90f8267f491a",
+						"likes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update likes by record id",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"like\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/records/0e2ddccf-f494-4c41-a499-90f8267f491a/likes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"records",
+								"0e2ddccf-f494-4c41-a499-90f8267f491a",
+								"likes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Mar 2022 04:12:52 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"like\": true,\n        \"count\": 1\n    }\n}"
+				}
+			]
+		}
+	]
+}
