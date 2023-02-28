@@ -20,10 +20,38 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(axios)/)"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "cobertura"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/src/types/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --verbose",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

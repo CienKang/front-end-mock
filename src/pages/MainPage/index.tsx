@@ -37,7 +37,6 @@ const MainPage = () => {
             setIsLoading(false);
         });
 
-
     }, []);
     if (!isLoading)
         return (

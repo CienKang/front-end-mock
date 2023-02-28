@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    margin-left: 50px;
 }
 
 .genre-logo-header>img {
@@ -12,12 +13,13 @@
 }
 
 .genre-logo-header>p {
+    font-family: 'Poppins', sans-serif;
     padding-bottom: 2.5px;
     text-align: center;
     width: 250px;
     height: 60px;
     padding-top: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-color: #4c63aa;
     color: white;
     height: 50px;
@@ -26,4 +28,12 @@
     font-weight: bolder;
     transform: translate(-25%, -25%);
     z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .genre-logo-header>p {
+        padding-bottom: 70px;
+
+    }
 }

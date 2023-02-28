@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage should match with the previous snapshots 1`] = `
+<DocumentFragment>
+  <div
+    class="error-container"
+  >
+    <p>
+      :((
+    </p>
+    <p>
+      seems a bit empty in here...
+    </p>
+    <button>
+      sync
+    </button>
+  </div>
+</DocumentFragment>
+`;
